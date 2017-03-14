@@ -9,9 +9,10 @@ module.exports = function(word, type, callback){
             if(response && (response.statusCode === 200)) {
                 related_display(JSON.parse(body), type);
                 if(callback){
+                    console.log("\n");
                     callback(word, "antonym");
                 }
             }
         }
     });
-}
+};

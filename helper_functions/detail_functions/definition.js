@@ -9,6 +9,7 @@ module.exports = function(word, callback){
             if( response && (response.statusCode === 200) ){
                 def_display(JSON.parse(body));
                 if(callback){
+                    console.log("\n");
                     callback(word, related_words);
                 }
             }
