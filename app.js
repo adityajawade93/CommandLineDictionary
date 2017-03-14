@@ -1,3 +1,3 @@
 var details = require("./helper_functions/details");
 
-details.ex("desperado");
+details.dict("desperado");
