@@ -9,7 +9,7 @@ module.exports = function(word, callback){
         } else {
             if( response && (response.statusCode === 200) ){
                 body = JSON.parse(body);
-                game.word = word;
+                game.word = word.toLowerCase();
                 game.def = body;
                 callback(word, game ,initGame);
             }

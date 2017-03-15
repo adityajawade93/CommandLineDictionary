@@ -7,12 +7,18 @@ module.exports = function(word, game, callback){
         } else {
             if(response && (response.statusCode === 200)) {
                 body = JSON.parse(body);
+                var found = false;
                 body.forEach(function(relation){
                     if(relation.relationshipType === "synonym"){
+                        found = true;
                         game.syn = relation.words;
                         callback(game);
                     }
                 });
+                if(!found){
+                    game.syn = [];
+                    callback(game);
+                }
             }
         }
     });

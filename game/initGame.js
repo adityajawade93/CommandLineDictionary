@@ -24,7 +24,7 @@ module.exports = function(game){
             if(error){
                 console.log(error);
             } else {
-                if(check_answer(result.guess)){
+                if(check_answer(result.guess.toLowerCase())){
                     console.log("Your answer is correct");
                     prompt.stop();
                 } else {
@@ -100,8 +100,8 @@ module.exports = function(game){
     function generateHints(){
         var hint_text = null;
         var hint = {};
-        if(game.def.length > 0){
-            hint_text = game.def[Math.round((Math.random() * game.def.length))];
+        if(game.def.length > 1){
+            hint_text = game.def.pop();
             hint.type = "def";
             hint.text = hint_text.text;
             game.hints.push(hint);
