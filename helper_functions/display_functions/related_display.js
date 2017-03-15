@@ -4,7 +4,7 @@ module.exports = function(body, type){
         if(relation.relationshipType === type){
             var words = relation.words;
             var relWords = "";
-            console.log(type + " :-");
+            console.log(type.toUpperCase() + "S :-");
             words.forEach(function(word){
                 relWords += word + ", ";
             });
@@ -14,6 +14,6 @@ module.exports = function(body, type){
         }
     });
     if(!found){
-        console.log("No " + type + "s found for the searched word");
+        console.log("No " + type + "s found for the word\n");
     }
 };

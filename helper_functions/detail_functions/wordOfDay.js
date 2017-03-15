@@ -8,7 +8,7 @@ module.exports = function(){
       } else {
           if(response && response.statusCode === 200){
               body = JSON.parse(body);
-              console.log("Word Of The Day: " + body.word + "\n");
+              console.log("\nWord Of The Day: " + body.word.toUpperCase() + "\n");
               dictionary(body.word);
           }
       }
