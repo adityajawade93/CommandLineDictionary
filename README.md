@@ -3,7 +3,7 @@
 ### Word Definitions
 **Display definitions of a word**. 
 
-<code> node app.js def <word> </code>
+<code> node app.js def <word>
 ***
 ### Word Synonyms
 **Display synonyms of a word**.
@@ -19,13 +19,13 @@
 ### Word Examples
 **Display examples of a word**
 
-<code> node app.js ex <word> </code>
+<code> node app.js ex <word>
 ***
 
 ### Word Full Dict
 **Display all above details for a word**
 
-<code> node app.js <word> </code> or <code> node app.js dict <word> </code>
+<code> node app.js <word> or <code> node app.js dict <word>
 ***
 
 ### Word of the Day Full Dict
