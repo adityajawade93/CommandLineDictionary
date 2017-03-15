@@ -2,6 +2,7 @@
 **A command line dictionary built in node using request and wordnik apis.**
 ### Word Definitions
 **Display definitions of a word**. 
+
 <code> node app.js def <word> </code>
 
 ### Word Synonyms
@@ -13,7 +14,6 @@
 **Display antonyms of a word**
 
 <code> node app.js ant <word>
-
 ### Word Examples
 **Display examples of a word**
 
