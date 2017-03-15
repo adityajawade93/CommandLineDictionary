@@ -1,5 +1,11 @@
 # CommandLineDictionary
 **A command line dictionary built in node using request and wordnik apis.**
+### Setting Up
+**Clone or download the repository then run**. 
+
+``` npm install ```
+
+
 ### Word Definitions
 **Display definitions of a word**. 
 
