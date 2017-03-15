@@ -1,5 +1,5 @@
 # CommandLineDictionary
-##A command line dictionary built in node using request and wordnik apis.
+**A command line dictionary built in node using request and wordnik apis.**
 ### Word Definitions
 **Display definitions of a word**. 
 <code> node app.js def <word> </code>
