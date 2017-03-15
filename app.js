@@ -1,4 +1,8 @@
 var details = require("./helper_functions/details");
 
-details.wod();
+var initDef = require("./game/initDef");
 
+var initSyn = require("./game/initSyn");
+
+
+initDef("good", initSyn);
