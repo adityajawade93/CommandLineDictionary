@@ -8,33 +8,33 @@
 ### Word Synonyms
 **Display synonyms of a word**.
 
-``` node app.js syn <word> ```
+``` node app.js syn word ```
 ***
   
 ### Word Antonyms
 **Display antonyms of a word**
 
-<code> node app.js ant <word>
+`` node app.js ant word ```
 ***
 ### Word Examples
 **Display examples of a word**
 
-<code> node app.js ex <word> </code>
+``` node app.js ex word ```
 ***
 
 ### Word Full Dict
 **Display all above details for a word**
 
-<code> node app.js <word> </code> or <code> node app.js dict <word> </code>
+``` node app.js word ``` or ``` node app.js dict word ```
 ***
 
 ### Word of the Day Full Dict
 **Display all above details of word of the day**
 
-<code> node app.js </code>
+``` node app.js ```
 ***
 ### Word Game
 **A small word guessing game , which fetches a random word from wordnik and asks you to guess it.**
 
-<code> node app.js play </code>
+``` node app.js play ```
 ***

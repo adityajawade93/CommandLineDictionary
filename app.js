@@ -19,6 +19,7 @@ if(args.length === 4){
             break;
         case 'dict':
             details.dict(args[3]);
+            break;
         
         default:
             console.log("illegal input");
