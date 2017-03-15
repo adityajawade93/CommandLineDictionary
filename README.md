@@ -3,7 +3,7 @@
 ### Word Definitions
 **Display definitions of a word**. 
 
-<code> node app.js def <word> </code>
+``` node app.js def word ```
 
 ### Word Synonyms
 **Display synonyms of a word**.
@@ -14,7 +14,7 @@
 ### Word Antonyms
 **Display antonyms of a word**
 
-`` node app.js ant word ```
+``` node app.js ant word ```
 ***
 ### Word Examples
 **Display examples of a word**
