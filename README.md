@@ -4,7 +4,7 @@
 **Display definitions of a word**. 
 
 <code> node app.js def <word> </code>
-***
+
 ### Word Synonyms
 **Display synonyms of a word**.
 
