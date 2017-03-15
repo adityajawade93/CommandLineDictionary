@@ -1,3 +1,4 @@
+//function to jumble letters of a given word.used to generate hint.
 module.exports = function (word) {
     var a = word.split(""),
         n = a.length;

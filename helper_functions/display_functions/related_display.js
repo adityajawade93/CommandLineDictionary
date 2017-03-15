@@ -1,3 +1,4 @@
+//displays the antonyms and synonyms with proper formatting.
 module.exports = function(body, type){
     var found = false;
     body.forEach(function(relation){

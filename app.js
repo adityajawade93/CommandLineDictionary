@@ -2,6 +2,7 @@ var details = require("./helper_functions/details");
 
 var args = process.argv;
 
+//calling diiferent methods for different command line arguments
 if(args.length === 4){
     var operation = args[2]; 
     switch (operation) {

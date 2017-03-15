@@ -1,4 +1,5 @@
 var exit = require("../exit");
+//displays the example usage of a word as bullet points.
 module.exports = function(body){
     if(body.examples.length === 0){
         exit();

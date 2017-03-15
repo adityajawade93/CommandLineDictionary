@@ -1,6 +1,8 @@
 var prompt = require("prompt");
 var shuffle = require("../helper_functions/shuffle");
 var dictionary = require("../helper_functions/detail_functions/dictionary");
+
+//initializes the game with hints and starts the game by calling accept_answer
 module.exports = function(game){
     
     game.hints = [];
@@ -11,14 +13,17 @@ module.exports = function(game){
     var def = game.def.pop();
     def = def.text;
     console.log("def :-" + def + "\n Can you guess the word:");
+    
+    // to take user input easily through command line
     prompt.start();
+    
     accept_answer();
     
     
 
 
     
-    
+    //accepts the guess from the user passes it to check_answer then decides whether to call or not to call wrong_answer depending on its return value
     function accept_answer(){
         prompt.get("guess", function(error, result){
             if(error){
@@ -34,6 +39,7 @@ module.exports = function(game){
         });
     }//end accept answer
     
+    //check the provided guess against the word and its synonyms and returns true or false according to it.
     function check_answer(word){
         var correct = false;
         game.syn.forEach(function(syn){
@@ -47,6 +53,7 @@ module.exports = function(game){
         return correct;    
     }//check answer
     
+    //displays the option menu after a wrong answer and depending on user choice call the give_hint , accept_answer or quit function.
     function wrong_answer(){
         console.log("1.Try again\n2.Hint\n3.Quit");
         console.log("input either 1 2 or 3");
@@ -74,10 +81,12 @@ module.exports = function(game){
         
     }//end wrong answer
     
+    //provides the user woith a hint and keeps track of the hints available
     function give_hint(){
         if(game.hints.length > 0){
             var hint = game.hints.pop();
             if(hint.type === "synonym"){
+                //removes the hint synonym from the main synonym array so that it cannot be used as an answer.
                 game.syn.splice(game.syn.indexOf(hint.text), 1);
                 console.log("you cannot use this synonym as the answer");
             }
@@ -90,13 +99,14 @@ module.exports = function(game){
         }
     }
     
+    //quits the game , displays the correct answer and stops the prompt.
     function quit(){
         console.log("The answer is:");
         dictionary(game.word);
         prompt.stop();
     }
     
-    
+    //populate the hint array with the available data.
     function generateHints(){
         var hint_text = null;
         var hint = {};
